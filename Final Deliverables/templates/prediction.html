@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <style>
+    #navbarRight {
+      margin-left: auto;
+      padding-right: 10px;
+    }
+
+    .navbar-brand {
+      padding-left: 15px;
+    }
+
+    .row {
+      width: 90%;
+    }
+  </style>
+  <title>DR Predcition</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div>
+      <a class="navbar-brand" href="#" style="color:aliceblue">Diabetic Retinopathy Classification</a>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
+      <ul class="navbar-nav mr-auto text-center" id="navbarRight">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: aliceblue;">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logout.html" style="color: aliceblue;">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br><br>
+  <div class="container justify-content-center" style="width:400px">
+    <form>
+    <label for="formFileLg" class="form-label">Upload Image</label>
+    <input class="form-control form-control-lg" id="formFileLg" type="file" />
+    <br>
+    <a href="" class="btn btn-dark">Predict</a>
+    </form>
+  </div>
+  <br><br><br>
+  <div class="container justify-content-center">
+    <img src="static/level.jpg" style="width: 90%">
+  </div>
+</body>
+</html>

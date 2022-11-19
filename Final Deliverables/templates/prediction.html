@@ -37,26 +37,28 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
       <ul class="navbar-nav mr-auto text-center" id="navbarRight">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html" style="color: aliceblue;">Home </a>
+          <a class="nav-link" href="index" style="color: aliceblue;">Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="logout.html" style="color: aliceblue;">Logout</a>
+          <a class="nav-link" href="logout" style="color: aliceblue;">Logout</a>
         </li>
       </ul>
     </div>
   </nav>
   <br><br>
-  <div class="container justify-content-center" style="width:400px">
-    <form>
+  <div class="container justify-content-center" style="width:700px">
+    <form action = "/predict" method = "POST" enctype="multipart/form-data">
     <label for="formFileLg" class="form-label">Upload Image</label>
-    <input class="form-control form-control-lg" id="formFileLg" type="file" />
+    <input class="form-control form-control-lg" name ="file" type="file" />
     <br>
-    <a href="" class="btn btn-dark">Predict</a>
+    <button class="btn btn-lg btn-dark" type = "submit">Predict</button>
     </form>
+    <br>
+    <h1>{{prediction}}</h1>
   </div>
   <br><br><br>
-  <div class="container justify-content-center">
-    <img src="static/level.jpg" style="width: 90%">
+  <div class="d-flex justify-content-center" >
+      <img src="static/level.png" style="width: 90%">
   </div>
 </body>
 </html>
